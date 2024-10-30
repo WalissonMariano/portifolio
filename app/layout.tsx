@@ -12,7 +12,12 @@ const appContainerStyle: React.CSSProperties = {
     minHeight: '100vh',
   };
   
-
+  const mainContentStyle: React.CSSProperties = {
+    paddingTop: '60px',
+    paddingBottom: '40px', 
+    flex: '1',
+  };
+  
 
 export default function RootLayout({ children }: Props) {
     return (
@@ -23,9 +28,9 @@ export default function RootLayout({ children }: Props) {
             <body>
                 <div style={appContainerStyle}>
                     <MainHeader />
-                       
+                        <main style={mainContentStyle}>
                             { children }
-                      
+                        </main>
                     <Footer />
                 </div>
             </body>

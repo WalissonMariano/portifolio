@@ -1,3 +1,6 @@
+import { AiFillFormatPainter } from "react-icons/ai";
+
 export default function Home() {
-  return <>Hello Word!</>
+    return <p>Hello Word! <AiFillFormatPainter /></p>
+
 }
